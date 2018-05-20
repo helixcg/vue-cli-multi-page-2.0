@@ -1,5 +1,4 @@
-
-这一次我们基于`vuejs2+webpack2+vuxui2`
+`vuejs2+webpack2+vuxui2`
 
  1. 全局统一使用的模块`Lib.js`库
  2. 支持字体图标
