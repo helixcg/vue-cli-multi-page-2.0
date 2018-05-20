@@ -1,0 +1,194 @@
+<template>
+  <div class="header">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-md-center justify-content-end  allinheader" id="navbarsExample08">
+
+        <ul class="navbar-nav ml-auto max-width">
+          <img src="../img/logo.png" class="imgheader">
+          <p class="img_title">让生活变得便捷、安全、智能</p>
+          <li class="nav-item">
+            <a class="nav-link colora" href="#" id="colora">系统登录</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link colora" href="#" id="colora">关于我们</a>
+          </li>
+          <li class="nav-item mgf_tips_icons">
+            <a class="nav-link  iconfont" title="谢谢关注" href="#" id="dropdown08" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&#xe635;</a>
+            <img src="../img/wechat-yujia.jpg" width ="130px" height = "130px" class="float_tips_area" />
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</template>
+
+<script>
+    export default{
+        name: '',
+        data(){
+            return {}
+        }
+    }
+</script>
+<style>
+@font-face {
+  font-family: 'iconfont';  /* project id 426128 */
+  src: url('//at.alicdn.com/t/font_426128_lrrtp3gawhw4gqfr.eot');
+  src: url('//at.alicdn.com/t/font_426128_lrrtp3gawhw4gqfr.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_426128_lrrtp3gawhw4gqfr.woff') format('woff'),
+  url('//at.alicdn.com/t/font_426128_lrrtp3gawhw4gqfr.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_426128_lrrtp3gawhw4gqfr.svg#iconfont') format('svg');
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+  }
+*{
+  margin:0;
+  padding:0;
+}
+.nav-title{
+   font-family: 'Abril Fatface', cursive;
+}
+.navbar-header .nav-title:hover,
+.navbar-header .nav-title:focus{
+  background:#fff;
+  color:#000;
+}
+
+.cative{
+  font-family:'Comfortaa', cursive;
+}
+.navbar-collapse .navbar-nav li a:hover,
+.navbar-collapse .navbar-nav li a:focus{
+  color:#000;
+  background:#fff;
+}
+.navbar-collapse .navbar-nav li a:hover, .navbar-collapse .navbar-nav li a:focus{
+background:transparent;
+color: #fff!important;
+}
+.nav-item{
+
+}
+.nav-item a{
+  color:#fff!important;
+}
+.max-width{
+width: 980px;
+margin: 0 auto;
+color: #fff;
+}
+.max-width p{
+  margin-right: 400px;
+  color: #fff!important;
+}
+.allinheader{
+width: 980px;
+}
+.img_title{
+  color: #e7e5e5!important;
+  vertical-align: middle;
+  display: inline-block;
+  line-height:38px;
+  font-size: 15px;
+  font-weight: 600;
+}
+.float_tips_area {
+    position:absolute;
+    background-color: #ffffff;
+    border-radius: 5px;
+    display:none;
+    right:20px;
+    right: 3px;
+    z-index: 1000;
+  }
+  .float_tips_area:hover #dropdown08{
+    color: #000!important
+}
+.mgf_tips_icons{
+    display:inline-block;
+    position: relative;
+    padding-left: 5px;
+}
+.mgf_tips_icons:hover .float_tips_area{
+     display:block;
+     border: 1px solid #dedede;
+}
+.header:hover{
+  z-index: 1000;
+  position: relative;
+  background:#fff!important;
+  transition: background-color .24s ease;
+}
+.header{
+  z-index: 1000;
+  position: relative;
+  background:rgba(100,100,100,0.2);
+
+}
+.bg-dark{
+  background: transparent!important;
+}
+.imgheader{
+margin:3.9px 20px;
+height: 30px;
+width: 83px;
+display:block;
+vertical-align: middle;
+}
+.header:hover .imgheader{
+  content: url('../img/logo2.png');
+  transition: background-color .24s ease;
+}
+.header:hover .img_title{
+  color: #000!important;
+}
+.header:hover .nav-link{
+  color: #000!important;
+}
+.header:hover #colora{
+  color: #000!important;
+}
+#colora{
+  color: #fff!important;
+}
+.colora{
+  font-size: 15px;
+  font-weight: 600;
+  color:#fff!important
+}
+#dropdown08:hover{
+  color:#1afa29!important
+}
+#colora{
+    position: relative;
+    text-decoration: none;
+}
+#colora:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 2px;
+    width: 100%;
+    background: #4285f4!important;
+    transform: scale(0)!important;
+    transition: all 0.3s!important;
+}
+#colora:hover:before{
+    transform: scale(1)!important;
+}
+@media screen and (max-width:760px) {
+.navbar, .navbar-expand-lg, .navbar-dark, .bg-dark{
+  background: transparent!important;
+}
+
+}
+</style>
