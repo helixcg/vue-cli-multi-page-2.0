@@ -2,8 +2,9 @@
 <div id="app">
 	<vheader></vheader>
 	<vimg></vimg>
+	<vcenter></vcenter>
     <div>
-		<group title="vux UI demo">
+		<group>
 			<cell v-for="el in list" :key="el.id" :title="el.name" value="" is-link :link="el.url"></cell>
 		</group>
 		<div class="note">
@@ -13,10 +14,10 @@
 		</div>
 	</div>
 	<div>
-	<divider>多页面 vue-router 2</divider>
-    <group>
-		<cell title="多页面路由" value="" is-link link="../router/details.html"></cell>
-	</group>
+		<divider>多页面 vue-router 2</divider>
+	    <group>
+			<cell title="多页面路由" value="" is-link link="../router/details.html"></cell>
+		</group>
 	</div>
 
 	<div class="martop15">
@@ -46,6 +47,7 @@ import $ from 'jquery';
 import Lib from 'assets/js/Lib';
 import header from 'components/header/header';
 import indeximg from 'components/indeximg/indeximg'
+import center from 'components/center/center'
 import { Cell,Group,Divider } from 'vux'
 import Swiper from 'swiper';
 
@@ -74,7 +76,7 @@ export default {
     }
   },
   components: {
-	Cell,Group,Divider,vheader:header,vimg:indeximg
+	Cell,Group,Divider,vheader:header,vimg:indeximg,vcenter:center,
   },
   //实例初始化最之前，无法获取到data里的数据
   beforeCreate(){

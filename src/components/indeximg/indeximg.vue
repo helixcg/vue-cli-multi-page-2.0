@@ -168,7 +168,6 @@ color: #fff!important;
 .vimg{
 position: relative;
 top: -60px;
-z-index: 1;
 }
 .swiper-lazy-preloader-white{
   background-image: linear-gradient(top,#5d7385,#8da0b0);
