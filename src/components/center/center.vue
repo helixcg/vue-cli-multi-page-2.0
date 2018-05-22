@@ -33,7 +33,7 @@
         }
     }
 </script>
-<style>
+<style scoped>
 *{
   margin:0;
   padding:0;
@@ -59,7 +59,7 @@
     padding: 120px 0 100px 0;
   }
   .businessInfoRow{
-    padding:0 50px;
+    padding:0 20px;
   }
     .businessInfoSec .businessInfoRow h2 {
     text-align: left;
