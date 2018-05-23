@@ -1,5 +1,5 @@
 <template>
-  <div class="header">
+  <div class="header" id="asd">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -26,14 +26,31 @@
 </template>
 
 <script>
+  import $ from 'jquery';
     export default{
         name: '',
         data(){
             return {}
-        }
+        },
+        methods: {
+          menu() {
+            this.scroll = document.documentElement.scrollTop || document.body.scrollTop;
+            if (this.scroll>= 1) {
+              $("#asd").removeClass("header");
+              $("#asd").addClass("headerp");
+            }
+            if (this.scroll <=0) {
+              $("#asd").removeClass("headerp");
+              $("#asd").addClass("header");
+            }
+          }
+        },
+        mounted() {
+          window.addEventListener('scroll', this.menu)
+        },
     }
 </script>
-<style>
+<style lang="less">
 @font-face {
   font-family: 'iconfont';  /* project id 426128 */
   src: url('//at.alicdn.com/t/font_426128_lrrtp3gawhw4gqfr.eot');
@@ -74,11 +91,10 @@
 background:transparent;
 color: #fff!important;
 }
-.nav-item{
-
-}
 .nav-item a{
   color:#fff!important;
+  vertical-align: middle;
+  display: inline-block;
 }
 .max-width{
 width: 980px;
@@ -123,25 +139,15 @@ width: 980px;
 }
 .header:hover{
   z-index: 1000;
-  position: relative;
+  position: fixed;
   background:#fff!important;
   transition: background-color .24s ease;
 }
 .header{
   z-index: 1000;
-  position: relative;
-  background:rgba(100,100,100,0.2);
-
-}
-.bg-dark{
-  background: transparent!important;
-}
-.imgheader{
-margin:3.9px 20px;
-height: 30px;
-width: 83px;
-display:block;
-vertical-align: middle;
+  position: fixed;
+  width: 100%;
+  background: linear-gradient(#999,transparent)
 }
 .header:hover .imgheader{
   content: url('../img/logo2.png');
@@ -155,6 +161,38 @@ vertical-align: middle;
 }
 .header:hover #colora{
   color: #000!important;
+}
+.headerp{
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
+  background:#fff!important;
+  border-bottom: 1px solid #f9f9f9;
+  transition: border-bottom .24s ease;
+  transition: background-color .24s ease;
+  .imgheader{
+    content: url('../img/logo2.png');
+    transition: background-color .24s ease;
+  }
+  .img_title{
+    color: #000!important;
+  }
+  .nav-link{
+    color: #000!important;
+  }
+  #colora{
+    color: #000!important;
+  }
+}
+.bg-dark{
+  background: transparent!important;
+}
+.imgheader{
+margin:3.9px 20px;
+height: 30px;
+width: 83px;
+display:block;
+vertical-align: middle;
 }
 #colora{
   color: #fff!important;
@@ -189,6 +227,5 @@ vertical-align: middle;
 .navbar, .navbar-expand-lg, .navbar-dark, .bg-dark{
   background: transparent!important;
 }
-
 }
 </style>

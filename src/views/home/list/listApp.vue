@@ -1,3 +1,6 @@
+<style scoped>
+    @import 'index.less';
+</style>
 <template>
 <div id="app">
 	<vheader></vheader>
@@ -31,40 +34,8 @@
 				</div>
 			</div>
     	</div>
-
-		<group>
-			<cell v-for="el in list" :key="el.id" :title="el.name" value="" is-link :link="el.url"></cell>
-		</group>
-		<div class="note">
-			<p>这里仅展示几个VUE UI的demo，更多组件demo请访问vux UI官网，官网地址：
-				<a href="https://vux.li" target="_blank">https://vux.li</a>
-			</p>
-		</div>
 	</div>
-	<div>
-		<divider>多页面 vue-router 2</divider>
-	    <group>
-			<cell title="多页面路由" value="" is-link link="../router/details.html"></cell>
-		</group>
-	</div>
-
-	<div class="martop15">
-	<divider>iconfont 字体</divider>
-    <group>
-		<cell title="iconfont图标展示" value="" is-link link="../iconfont/list.html"></cell>
-	</group>
-	</div>
-
-	<div class="martop15">
-	<divider>其他</divider>
-    <group>
-		<cell title="自定义vue全局过滤器" value="" is-link link="../tools/vuefilter.html"></cell>
-		<cell title="模块下放静态文件" value="" is-link link="../tools/bigimage.html"></cell>
-		<cell title="ajax" value="" is-link link="../tools/ajax.html"></cell>
-		<cell title="获取url参数" value="" is-link link="../tools/getQuery.html?goodsid=1688&shopid=25"></cell>
-	</group>
-	</div>
-
+	<vfooter></vfooter>
 </div>
 </template>
 
@@ -76,7 +47,7 @@ import Lib from 'assets/js/Lib';
 import header from 'components/header/header';
 import indeximg from 'components/indeximg/indeximg'
 import center from 'components/center/center'
-import { Cell,Group,Divider } from 'vux'
+import footer from 'components/footer/footer'
 import Swiper from 'swiper';
 
 export default {
@@ -104,7 +75,7 @@ export default {
     }
   },
   components: {
-	Cell,Group,Divider,vheader:header,vimg:indeximg,vcenter:center,
+	vheader:header,vimg:indeximg,vcenter:center,vfooter:footer,
   },
   //实例初始化最之前，无法获取到data里的数据
   beforeCreate(){
@@ -137,72 +108,5 @@ export default {
 </script>
 
 <style lang="less" scoped>
-.note{
-	color:#666;
-	padding:10px;
-	font-size:12px;
-}
-.note p{
-	line-height:25px;
-}
-
-.weui-cells{
-font-size: 14px!important;
-}
-
-/*
- * less 展示
- */
-.lessTest{
-	.listbox{
-		border-radius: 10px;
-		font-size: 14px;
-	}
-	.boxcontent{
-		padding: 15px;
-	}
-}
-.centerb{
-	background: #fff;
-	padding-top:4rem;
-	padding-bottom: 2rem;
-}
-.centerb img{
-	float: right;
-}
-.centerb h1{
-	padding-left:60px;
-	padding-top: 90px;
-	font-family:'Microsoft Yahei'!important;
-	font-weight: 100!important;
-}
-.centerv{
-	padding-top:1rem;
-}
-.centerv img{
-	float: right;
-}
-.centerv h1{
-	padding-left:60px;
-	padding-top: 90px;
-	font-family:'Microsoft Yahei'!important;
-	font-weight: 100!important;
-}
-.centerv{
-	background: #fafafa;
-	img{
-
-	}
-}
-.asdtext{
-	a{
-		display: inline-block;
-		padding-left:60px;
-		padding-top: 20px;
-		color: blue;
-		font-family: 'Microsoft Yahei'!important;
-		font-weight: 100!important
-	}
-}
 @import '~bootstrap/dist/css/bootstrap.min.css';
 </style>
