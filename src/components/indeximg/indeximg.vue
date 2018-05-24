@@ -70,7 +70,7 @@ import "swiper/dist/css/swiper.min.css";
               swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
             },
             loop : true,
-            autoplay : 8000,
+            autoplay : 4000,
             speed:300,
             observer: true,
             observeParents: true,

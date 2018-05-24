@@ -19,21 +19,40 @@
 				<img src="~components/img/4567.png">
 			</div>
     	</div>
-    	<div class="centerc row" style="margin-right: 0px;">
-			<div class="col-md-12" style="padding-right: 0px;">
-				<img src="~components/img/center6.png" width="100%" >
+    	<div class="centerv row" style="margin-right: 0px; background: #ccc">
+    		<div class="col-md-5">
+				<img src="~components/img/20180507锁.png" class="col-md-12">
+			</div>
+			<div class="col-md-6" style="padding-right: 0px">
+				<div class="asdtext">
+					<h1>誉嘉锁被建立到最后。采用优质材料和耐用设计, 我们的智能锁定解决方案的范围将使您的团队、构建和资产安全.</h1>
+					<h3><a href="">了解管理平台</a></h3>
+				</div>
 			</div>
     	</div>
     	<div class="centerv row" style="margin-right: 0px;">
-			<div class="col-md-4">
-				<img src="~components/img/123.png" class="col-md-6">
-			</div>
 			<div class="col-md-8" style="padding-right: 0px">
 				<div class="asdtext">
 					<h1>誉嘉智能锁管理平台允许您查看、管理您的用户与锁, 实现无间隙的观察与安全性。</h1>
 					<h3><a href="">了解管理平台</a></h3>
 				</div>
 			</div>
+			<div class="col-md-3">
+				<img src="~components/img/123.png" class="col-md-8">
+			</div>
+    	</div>
+    	<div class="centerv row" style="margin-right: 0px">
+    		<div class="col-md-6" style="padding-right: 0px">
+    			<a href="">
+    				<div class="imghover">
+    					<img src="~components/img/20180508锁.png" class="col-md-7" height="40%">
+    					<p class="col clearfix">123</p>
+    				</div>
+    			</a>
+    		</div>
+    		<div class="col-md-6">
+
+    		</div>
     	</div>
 	</div>
 	<vfooter></vfooter>
