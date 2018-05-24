@@ -5,7 +5,8 @@
 <div id="app">
 	<vheader></vheader>
 	<vimg></vimg>
-	<vcenter></vcenter>
+	<div style="position: absolute; z-index: 100;top: 800px">
+		<vcenter></vcenter>
     <div>
     	<div class="centerb row" style="margin-right: 0px;">
 			<div class="col-md-7">
@@ -36,6 +37,7 @@
     	</div>
 	</div>
 	<vfooter></vfooter>
+	</div>
 </div>
 </template>
 

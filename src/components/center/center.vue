@@ -45,8 +45,8 @@
 
 }
 .centerback{
-  background: url(../img/infoSecBackground.png);
-  margin-top:-60px;
+  background: url(../img/infoSecBackground.jpg);
+  margin-top:0px;
 }
 @media only screen and (min-width: 1100px){
   .businessInfoSec img {

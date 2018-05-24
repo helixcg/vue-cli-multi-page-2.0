@@ -1,23 +1,15 @@
 <template>
-  <div class="vimg">
+  <div class="vimg" style="position:fixed;top: 0px;width: 100%">
   <div class="swiper-container">
       <div class="swiper-wrapper">
         <div class="swiper-slide" style="background: #ccc">
-          <img src="../img/20180504锁.png">
-          <p class="ani" data-swiper-animation="fadeIn" data-duration=".5s" data-delay="1s" style="position: absolute;top: 50%;left: 50%">Animation
-          </p>
+          <img src="../img/20180521锁.png">
+          <p class="ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">誉嘉，生活智能化</p>
         </div>
         <div class="swiper-slide" style="background:rgba(235,213,161,0.4);">
-          <img src="../img/20180512锁.png">
-        </div>
-        <div class="swiper-slide">
-          <img src="../img/20180501.png">
-        </div>
-        <div class="swiper-slide">
-          <img src="../img/20180501.png">
-        </div>
-        <div class="swiper-slide">
-          <img src="../img/20180501.png">
+          <img src="../img/20180523.png">
+          <p class="ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">誉嘉，生活智能化
+          </p>
         </div>
       </div>
     </div>
@@ -27,7 +19,7 @@
 <script>
 import Swiper from "swiper"
 import SwiperAnimation from 'swiper-animation';
-import "swiper/dist/css/swiper.min.css"
+import "swiper/dist/css/swiper.min.css";
     export default{
         name: '',
         props: {
@@ -64,13 +56,25 @@ import "swiper/dist/css/swiper.min.css"
             return {}
         },
         mounted(){
-        let swiperAnimation = new SwiperAnimation();
+          require('swiper-animate-cn/animate.min.css')
+        var swiperAnimation = new SwiperAnimation();
+        var swiperAnimateCache = require('swiper-animate-cn').swiperAnimateCache;
+        var swiperAnimate = require('swiper-animate-cn').swiperAnimate;
+        var clearSwiperAnimate = require('swiper-animate-cn').clearSwiperAnimate;
         var swiper = new Swiper('.swiper-container', {
-          on: {
-            init: () => swiperAnimation.init(swiper).animate(),
-            slideChange: () => swiperAnimation.init(swiper).animate()
-          },
-          preloadImages: false,
+           onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
+              swiperAnimateCache(swiper); //隐藏动画元素
+              swiperAnimate(swiper); //初始化完成开始动画
+            },
+            onSlideChangeEnd: function(swiper){
+              swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+            },
+            loop : true,
+            autoplay : 8000,
+            speed:300,
+            observer: true,
+            observeParents: true,
+            preloadImages: false,
           pagination: {
             el: '.swiper-pagination',
             dynamicBullets: true,
@@ -129,6 +133,11 @@ color: #fff!important;
 .nav-item a{
   color:#e7e5e5!important;
 }
+.ani{
+  position: absolute;
+  top: 50%;
+  left:50%;
+}
  .swiper-container {
     width: 100%;
     height: 100%;
@@ -155,25 +164,24 @@ color: #fff!important;
         // -webkit-align-items: center;
         // align-items: center;
         img {
-            width: 50%;
-            height: 50%;
+            width: 100%;
+            height: 100%;
         }
-        .imgp{
-            position: absolute;
-            top: 50%;
-            left: 50%;
+        p{
+          font-size: 2rem;
+          text-align: center;
+          font-weight: 700;
+          color: #fff;
+        }
+        .asdf{
+          margin: 45px auto 0;
+          font-size: 1rem;
+          line-height: 26px;
+          text-align: center;
+          position: absolute;top: 50%;
+          left: 50%;
+          color: #fff;
         }
     }
-}
-.vimg{
-position: relative;
-top: -60px;
-}
-.swiper-lazy-preloader-white{
-  background-image: linear-gradient(top,#5d7385,#8da0b0);
-  background-image: -webkit-linear-gradient(top,#5d7385,#8da0b0);
-  background-image: -o-linear-gradient(top,#5d7385,#8da0b0);
-  background-image: -ms-linear-gradient(top,#5d7385,#8da0b0);
-  background-image: -moz-linear-gradient(top,#5d7385,#8da0b0)
 }
 </style>
