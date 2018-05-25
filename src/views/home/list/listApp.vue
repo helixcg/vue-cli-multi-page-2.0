@@ -5,7 +5,7 @@
 <div id="app">
 	<vheader></vheader>
 	<vimg></vimg>
-	<div style="position: absolute; z-index: 100;top: 800px">
+	<div style="position: absolute; z-index: 100;top: 800px;width: 100%">
 		<vcenter></vcenter>
     <div>
     	<div class="centerb row" style="margin-right: 0px;">
@@ -41,18 +41,30 @@
 				<img src="~components/img/123.png" class="col-md-8">
 			</div>
     	</div>
-    	<div class="centerv row" style="margin-right: 0px">
-    		<div class="col-md-6" style="padding-right: 0px">
-    			<a href="">
-    				<div class="imghover">
-    					<img src="~components/img/20180508锁.png" class="col-md-7" height="40%">
-    					<p class="col clearfix">123</p>
-    				</div>
-    			</a>
-    		</div>
-    		<div class="col-md-6">
-
-    		</div>
+    	<div class="centerz row" style="margin-right: 0px">
+        <div class="col-md-1"></div>
+        <div class="col-md-5 hoverimg">
+          <a href="" class="imghover">
+            <div class="imgall col-md-12">
+              <div class="imghead">
+                <img src="~components/img/logo.png" >
+                <p class="colq">123</p>
+              </div>
+              <img src="~components/img/20180508锁.png" width="100%" id="ash" class="col-md-9">
+            </div>
+          </a>
+        </div>
+        <div class="col-md-5 hoverimg">
+          <a href="" class="imghover">
+            <div class="imgall col-md-12">
+              <div class="imghead">
+                <img src="~components/img/logo.png" >
+                <p class="colq">123</p>
+              </div>
+              <img src="~components/img/20180508锁.png" width="100%" id="ash" class="col-md-9">
+            </div>
+          </a>
+        </div>
     	</div>
 	</div>
 	<vfooter></vfooter>

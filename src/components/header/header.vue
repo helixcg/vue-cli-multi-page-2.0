@@ -5,10 +5,11 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-md-center justify-content-end  allinheader" id="navbarsExample08">
-
-        <ul class="navbar-nav ml-auto max-width">
-          <img src="../img/logo.png" class="imgheader">
+        <ul class="navbar-category mr-auto">
+          <div class="imgheader"></div>
           <p class="img_title">让生活变得便捷、安全、智能</p>
+        </ul>
+        <ul class="navbar-nav ml-auto">
           <li class="nav-item">
             <a class="nav-link colora" href="#" id="colora">系统登录</a>
           </li>
@@ -97,19 +98,17 @@ color: #fff!important;
   display: inline-block;
 }
 .max-width{
-width: 980px;
-margin: 0 auto;
-color: #fff;
+  margin: 0 auto!important;
+  color: #fff;
+  width: 100%
 }
 .max-width p{
-  margin-right: 400px;
   color: #fff!important;
 }
 .allinheader{
-width: 980px;
 }
 .img_title{
-  color: #e7e5e5!important;
+  color: #fff!important;
   vertical-align: middle;
   display: inline-block;
   line-height:38px;
@@ -150,7 +149,8 @@ width: 980px;
   background: linear-gradient(#999,transparent)
 }
 .header:hover .imgheader{
-  content: url('../img/logo2.png');
+  background: url('../img/2logo.png')!important;
+  background-size: cover!important;
   transition: background-color .24s ease;
 }
 .header:hover .img_title{
@@ -170,29 +170,33 @@ width: 980px;
   border-bottom: 1px solid #f9f9f9;
   transition: border-bottom .24s ease;
   transition: background-color .24s ease;
-  .imgheader{
-    content: url('../img/logo2.png');
+}
+ .headerp .imgheader{
+    background: url('../img/2logo.png')!important;
+    background-size: cover!important;
     transition: background-color .24s ease;
   }
-  .img_title{
+  .headerp .img_title{
     color: #000!important;
   }
-  .nav-link{
+  .headerp .nav-link{
     color: #000!important;
   }
-  #colora{
+  .headerp #colora{
     color: #000!important;
   }
-}
 .bg-dark{
   background: transparent!important;
 }
 .imgheader{
-margin:3.9px 20px;
-height: 30px;
-width: 83px;
-display:block;
-vertical-align: middle;
+  margin:3.9px 20px;
+  height: 30px;
+  width: 83px;
+  display:inline-block;
+  vertical-align: middle;
+  color: #fff;
+  background:url('../img/logo.png');
+  background-size: cover;
 }
 #colora{
   color: #fff!important;
@@ -227,5 +231,12 @@ vertical-align: middle;
 .navbar, .navbar-expand-lg, .navbar-dark, .bg-dark{
   background: transparent!important;
 }
+}
+#navbarsExample08{
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.navbar-category{
+
 }
 </style>
