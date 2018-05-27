@@ -47,7 +47,7 @@
           <a href="" class="imghover">
             <div class="imgall col-md-12">
               <div class="imghead">
-                <img src="~components/img/logo.png" >
+                <img src="~components/img/logo.png" class="img-fluid" >
                 <p class="colq">123</p>
               </div>
               <img src="~components/img/20180508锁.png" width="100%" id="ash" class="col-md-9">
@@ -58,7 +58,7 @@
           <a href="" class="imghover">
             <div class="imgall col-md-12">
               <div class="imghead">
-                <img src="~components/img/logo.png" >
+                <img src="~components/img/logo.png" class="img-fluid">
                 <p class="colq">123</p>
               </div>
               <img src="~components/img/20180508锁.png" width="100%" id="ash" class="col-md-9">

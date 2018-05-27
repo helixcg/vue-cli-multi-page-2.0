@@ -1,14 +1,14 @@
 <template>
-  <div class="header" id="asd">
+  <div class="header container-fluid" id="asd">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-md-center justify-content-end  allinheader" id="navbarsExample08">
-        <ul class="navbar-category mr-auto">
+      <div class="collapse navbar-collapse" id="navbarsExample08">
+        <span  class="navbar-text">
           <div class="imgheader"></div>
           <p class="img_title">让生活变得便捷、安全、智能</p>
-        </ul>
+        </span >
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
             <a class="nav-link colora" href="#" id="colora">系统登录</a>
@@ -231,10 +231,6 @@ color: #fff!important;
 .navbar, .navbar-expand-lg, .navbar-dark, .bg-dark{
   background: transparent!important;
 }
-}
-#navbarsExample08{
-  margin: 0 auto;
-  max-width: 1200px;
 }
 .navbar-category{
 
