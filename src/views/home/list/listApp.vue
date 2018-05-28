@@ -50,7 +50,7 @@
                 <img src="~components/img/logo.png" class="img-fluid" >
                 <p class="colq">123</p>
               </div>
-              <img src="~components/img/20180508锁.png" width="100%" id="ash" class="col-md-9">
+              <img src="~components/img/20180508锁.png" width="100%" class="ash col-md-9">
             </div>
           </a>
         </div>
@@ -61,7 +61,7 @@
                 <img src="~components/img/logo.png" class="img-fluid">
                 <p class="colq">123</p>
               </div>
-              <img src="~components/img/20180508锁.png" width="100%" id="ash" class="col-md-9">
+              <img src="~components/img/20180508锁.png" width="100%" class="ash col-md-9">
             </div>
           </a>
         </div>
