@@ -44,7 +44,7 @@
     	<div class="centerz row" style="margin-right: 0px">
         <div class="col-md-1"></div>
         <div class="col-md-5 hoverimg">
-          <a href="" class="imghover">
+          <a href="../iconfont/list.html" class="imghover">
             <div class="imgall col-md-12">
               <div class="imghead">
                 <img src="~components/img/logo.png" class="img-fluid" >
@@ -55,7 +55,7 @@
           </a>
         </div>
         <div class="col-md-5 hoverimg">
-          <a href="" class="imghover">
+          <a href="../iconfont/list.html" class="imghover">
             <div class="imgall col-md-12">
               <div class="imghead">
                 <img src="~components/img/logo.png" class="img-fluid">
@@ -67,6 +67,7 @@
         </div>
     	</div>
 	</div>
+  <cell title="多页面路由" value="" is-link link="../router/details.html"></cell>
 	<vfooter></vfooter>
 	</div>
 </div>
