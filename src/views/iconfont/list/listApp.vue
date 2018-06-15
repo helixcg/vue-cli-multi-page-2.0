@@ -4,12 +4,36 @@
 <template>
 <div id="app">
     <vheader></vheader>
-    <!-- <vimg></vimg> -->
+    <!-- <vclimg></vclimg> -->
     <div style="position: absolute; z-index: 100;width: 100%">
+        <div class="row asdcen" style="margin-right: 0px;">
+          <div class="col-md-2"></div>
+          <div class="centersx col-md-5">
+              <div class="ctext_ta">
+                  <u-animate-container>
+                    <u-animate name="fadeInLeft" delay="2s" duration=".7s" :iteration="1" :offset="0" animateClass="animated" :begin="false"><p class="centers">专为<br>&nbsp&nbsp&nbsp&nbsp公寓/长短租/民宿/客栈/酒店 &nbsp设计</p></u-animate>
+                    <u-animate name="fadeInLeft" delay="2.3s" duration=".7s" :iteration="1" :offset="0" animateClass="animated" :begin="false"><p class="centers asd">互联网公寓管理智能门锁系统解决方案</p></u-animate>
+                  </u-animate-container>
+              </div>
+          </div>
+          <div class="col-md-5">
+              <img src="~components/img/fff.png" width="60%">
+          </div>
+        </div>
+        <div class="row tese" style="margin-right: 0px">
+            <p class="col-md-12 text-center">
+                <u-animate name="fadeInUpBig" delay="1s" duration=".7s" :iteration="1" :offset="0" animateClass="animated" :begin="false"><p class="">海量门锁 管理很轻松</p></u-animate>
+                  </u-animate-container>
+            </p>
+            <p class="col-md-12 text-center">
+                <u-animate name="fadeInUpBig" delay="1.5s" duration=".7s" :iteration="1" :offset="0" animateClass="animated" :begin="false"><p class="asdq">1个LM系统，管理50万把锁</p></u-animate>
+                  </u-animate-container>
+            </p>
+        </div>
         <vcenter></vcenter>
     <div>
         <div class="centerb row" style="margin-right: 0px;">
-            <div class="col-md-7">
+            <div class="col-md-5">
                 <div class="asdtext">
                     <h1>誉嘉智能锁管理平台允许您查看、管理您的用户与锁, 实现无间隙的观察与安全性。</h1>
                     <h3><a href="">了解管理平台</a></h3>
@@ -19,6 +43,9 @@
                 <img src="~components/img/4567.png">
             </div>
         </div>
+        <u-animate-container>
+            <u-animate name="fadeIn" delay="0s" duration="1s" :iteration="1" :offset="0" animateClass="animated" :begin="false">测试</u-animate>
+          </u-animate-container>
         <div class="centerv row" style="margin-right: 0px; background: #ccc">
             <div class="col-md-5">
                 <img src="~components/img/20180507锁.png" class="col-md-12">
@@ -79,16 +106,20 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 import $ from 'jquery';
 import Lib from 'assets/js/Lib';
 import header from 'components/header/header';
-import indeximg from 'components/indeximg/indeximg'
+import vlimg from 'components/vlimg/vlimg'
 import center from 'components/center/center'
 import footer from 'components/footer/footer'
-import Swiper from 'swiper';
-
+import {UAnimateContainer, UAnimate} from 'vue-wow'
+import animate from 'animate.css'
 export default {
    props:{ // 子组件获取 父组件 数据
      sell:{
       type:Object // 传递的类型
-     }
+     },
+     components: {
+        UAnimateContainer,
+        UAnimate
+      }
    },
   data() {
     return {
@@ -109,7 +140,7 @@ export default {
     }
   },
   components: {
-    vheader:header,vimg:indeximg,vcenter:center,vfooter:footer,
+    vheader:header,vclimg:vlimg,vcenter:center,vfooter:footer,
   },
   //实例初始化最之前，无法获取到data里的数据
   beforeCreate(){
@@ -121,18 +152,7 @@ export default {
   },
   //已成功挂载，相当ready()
   mounted(){
-    var swiper = new Swiper('.swiper-container', {
-      // Enable lazy loading
-      lazy: true,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
+
   },
   //相关操作事件
   methods: {
