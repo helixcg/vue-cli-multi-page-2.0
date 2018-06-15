@@ -11,25 +11,79 @@
           <div class="centersx col-md-5">
               <div class="ctext_ta">
                   <u-animate-container>
-                    <u-animate name="fadeInLeft" delay="2s" duration=".7s" :iteration="1" :offset="0" animateClass="animated" :begin="false"><p class="centers">专为<br>&nbsp&nbsp&nbsp&nbsp公寓/长短租/民宿/客栈/酒店 &nbsp设计</p></u-animate>
-                    <u-animate name="fadeInLeft" delay="2.3s" duration=".7s" :iteration="1" :offset="0" animateClass="animated" :begin="false"><p class="centers asd">互联网公寓管理智能门锁系统解决方案</p></u-animate>
+                    <u-animate name="fadeInLeft" delay="2s" duration=".7s" :iteration="1" :offset="0" animateClass="animated" :begin="true"><p class="centers">专为<br>&nbsp&nbsp&nbsp&nbsp公寓/长短租/民宿/客栈/酒店 &nbsp设计</p></u-animate>
+                    <u-animate name="fadeInLeft" delay="2.5s" duration=".7s" :iteration="1" :offset="0" animateClass="animated" :begin="true"><p class="centers asd">互联网公寓管理智能门锁系统解决方案</p></u-animate>
                   </u-animate-container>
               </div>
           </div>
           <div class="col-md-5">
-              <img src="~components/img/fff.png" width="60%">
+              <img src="~components/img/fff.png" width="90%">
           </div>
         </div>
         <div class="row tese" style="margin-right: 0px">
-            <p class="col-md-12 text-center">
-                <u-animate name="fadeInUpBig" delay="1s" duration=".7s" :iteration="1" :offset="0" animateClass="animated" :begin="false"><p class="">海量门锁 管理很轻松</p></u-animate>
-                  </u-animate-container>
+            <p class="col-md-12 text-center" style="margin-top: 50px">
+                <u-animate-container>
+                <u-animate name="fadeInUpBig" delay="0s" duration=".5s" :iteration="1" :offset="0" animateClass="animated" :begin="false"><p class="">海量门锁 管理很轻松</p></u-animate>
+          </u-animate-container>
             </p>
             <p class="col-md-12 text-center">
-                <u-animate name="fadeInUpBig" delay="1.5s" duration=".7s" :iteration="1" :offset="0" animateClass="animated" :begin="false"><p class="asdq">1个LM系统，管理50万把锁</p></u-animate>
+                <u-animate-container>
+                <u-animate name="fadeInUpBig" delay="0s" duration=".5s" :iteration="1" :offset="0" animateClass="animated" :begin="false"><p class="asdq">1个LM系统，管理50万把锁</p></u-animate>
                   </u-animate-container>
             </p>
+            <div style="width: 100%">
+                <div class="man-con cf">
+                   <dl class="wow fadeInUp animated" style="animation-delay: 0.7s; visibility: visible; animation-name: fadeInUp;">
+                    <dt class="man-item1 iconfont">&#xe7a3;</dt>
+                    <dd>
+                     多锁管理
+                     <p>海量门锁集中管理<br />方便快捷</p>
+                    </dd>
+                   </dl>
+                   <dl class="wow fadeInUp animated" style="animation-delay: 1s; visibility: visible; animation-name: fadeInUp;">
+                    <dt class="man-item1 iconfont">&#xe7a3;</dt>
+                    <dd>
+                     账户分配
+                     <p>多级账户权限分配<br />密码下发</p>
+                    </dd>
+                   </dl>
+                   <dl class="wow fadeInUp animated" style="animation-delay: 1.3s; visibility: visible; animation-name: fadeInUp;">
+                    <dt class="man-item1 iconfont">&#xe7a3;</dt>
+                    <dd>
+                     智能运维
+                     <p>门锁平台智能运维<br />操作流畅</p>
+                    </dd>
+                   </dl>
+                   <dl class="wow fadeInUp animated" style="animation-delay: 1.6s; visibility: visible; animation-name: fadeInUp;">
+                    <dt class="man-item1 iconfont">&#xe7a3;</dt>
+                    <dd>
+                     无缝接口
+                     <p>多项终端随时查看<br />兼容性高</p>
+                    </dd>
+                   </dl>
+                  </div>
+            </div>
+            <div style="width: 100%">
+                  <div class="ss-section">
+                   <div class="auto-container">
+                    <div class="section-title section-title2">
+
+                        <u-animate-container>
+                            <u-animate name="fadeIn" delay="0s" duration="1s" :iteration="1" :offset="0" animateClass="animated" :begin="false"><h2>房间信息实时在线随时查看</h2></u-animate>
+                        </u-animate-container>
+                     <p class="wow fadeInUp animated" style="animation-delay: 0.4s; visibility: visible; animation-name: fadeInUp;">房源动态 / 库存信息 / 电池电量 / 网络信号 <br /> 门锁基站信息 / 异常预警 <br /> 每个房间进行密码 / 权限实时管理</p>
+                    </div>
+                    <div class="ss-right">
+                     <div class="img1-wrap img-wrap">
+                      <img src="Public/Images/ss-img1.png" class="ss-img1 wow fadeInDown animated" style="animation-delay: 0.5s; animation-duration: 1.3s; visibility: visible; animation-name: fadeInDown;" />
+                     </div>
+                    </div>
+                   </div>
+                  </div>
+            </div>
         </div>
+
+
         <vcenter></vcenter>
     <div>
         <div class="centerb row" style="margin-right: 0px;">
