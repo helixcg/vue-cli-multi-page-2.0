@@ -28,124 +28,188 @@
             </p>
             <p class="col-md-12 text-center">
                 <u-animate-container>
-                <u-animate name="fadeInUpBig" delay="0s" duration=".5s" :iteration="1" :offset="0" animateClass="animated" :begin="false"><p class="asdq">1个LM系统，管理50万把锁</p></u-animate>
+                <u-animate name="fadeInUpBig" delay="0s" duration=".5s" :iteration="1" :offset="0" animateClass="animated" :begin="false"><p class="asdq">1个系统，管理100万把锁</p></u-animate>
                   </u-animate-container>
             </p>
             <div style="width: 100%">
                 <div class="man-con cf">
-                   <dl class="wow fadeInUp animated" style="animation-delay: 0.7s; visibility: visible; animation-name: fadeInUp;">
-                    <dt class="man-item1 iconfont">&#xe7a3;</dt>
-                    <dd>
-                     多锁管理
-                     <p>海量门锁集中管理<br />方便快捷</p>
-                    </dd>
-                   </dl>
-                   <dl class="wow fadeInUp animated" style="animation-delay: 1s; visibility: visible; animation-name: fadeInUp;">
-                    <dt class="man-item1 iconfont">&#xe7a3;</dt>
-                    <dd>
-                     账户分配
-                     <p>多级账户权限分配<br />密码下发</p>
-                    </dd>
-                   </dl>
-                   <dl class="wow fadeInUp animated" style="animation-delay: 1.3s; visibility: visible; animation-name: fadeInUp;">
-                    <dt class="man-item1 iconfont">&#xe7a3;</dt>
-                    <dd>
-                     智能运维
-                     <p>门锁平台智能运维<br />操作流畅</p>
-                    </dd>
-                   </dl>
-                   <dl class="wow fadeInUp animated" style="animation-delay: 1.6s; visibility: visible; animation-name: fadeInUp;">
-                    <dt class="man-item1 iconfont">&#xe7a3;</dt>
-                    <dd>
-                     无缝接口
-                     <p>多项终端随时查看<br />兼容性高</p>
-                    </dd>
-                   </dl>
+                    <u-animate-container>
+                        <u-animate name="fadeInUpBig" delay="0s" duration=".4s" :iteration="1" :offset="0" animateClass="animated" :begin="false">
+                            <dl class="wow fadeInUp animated">
+                            <dt class="man-item1 iconfont">&#xe7a3;</dt>
+                            <dd>
+                             多锁管理
+                             <p>海量门锁集中管理<br />方便快捷</p>
+                            </dd>
+                           </dl>
+                        </u-animate>
+                      </u-animate-container>
+                      <u-animate-container>
+                        <u-animate name="fadeInUpBig" delay="0s" duration=".5s" :iteration="1" :offset="0" animateClass="animated" :begin="false">
+                            <dl class="wow fadeInUp animated">
+                            <dt class="man-item1 iconfont">&#xe7a3;</dt>
+                            <dd>
+                             账户分配
+                             <p>多级账户权限分配<br />密码下发</p>
+                            </dd>
+                           </dl>
+                        </u-animate>
+                      </u-animate-container>
+                      <u-animate-container>
+                        <u-animate name="fadeInUpBig" delay="0s" duration=".6s" :iteration="1" :offset="0" animateClass="animated" :begin="false">
+                            <dl class="wow fadeInUp animated">
+                            <dt class="man-item1 iconfont">&#xe7a3;</dt>
+                            <dd>
+                             智能运维
+                            <p>门锁平台智能运维<br />操作流畅</p>
+                            </dd>
+                           </dl>
+                        </u-animate>
+                      </u-animate-container>
+                      <u-animate-container>
+                        <u-animate name="fadeInUpBig" delay="0s" duration=".7s" :iteration="1" :offset="0" animateClass="animated" :begin="false">
+                            <dl class="wow fadeInUp animated">
+                            <dt class="man-item1 iconfont">&#xe7a3;</dt>
+                            <dd>
+                             无缝接口
+                            <p>多项终端随时查看<br />兼容性高</p>
+                            </dd>
+                           </dl>
+                        </u-animate>
+                      </u-animate-container>
                   </div>
             </div>
             <div style="width: 100%">
                   <div class="ss-section">
                    <div class="auto-container">
                     <div class="section-title section-title2">
-
                         <u-animate-container>
-                            <u-animate name="fadeIn" delay="0s" duration="1s" :iteration="1" :offset="0" animateClass="animated" :begin="false"><h2>房间信息实时在线随时查看</h2></u-animate>
+                            <u-animate name="fadeInLeft" delay=".1s" duration="1s" :iteration="1" :offset="0" animateClass="animated" :begin="false">
+                                <p class="wow fadeInUp animated" >房源动态 / 库存信息 / 电池电量 / 网络信号 <br /> 门锁基站信息 / 异常预警 <br />每个房间进行密码 / 权限实时管理</p>
+                            </u-animate>
                         </u-animate-container>
-                     <p class="wow fadeInUp animated" style="animation-delay: 0.4s; visibility: visible; animation-name: fadeInUp;">房源动态 / 库存信息 / 电池电量 / 网络信号 <br /> 门锁基站信息 / 异常预警 <br /> 每个房间进行密码 / 权限实时管理</p>
                     </div>
                     <div class="ss-right">
                      <div class="img1-wrap img-wrap">
-                      <img src="Public/Images/ss-img1.png" class="ss-img1 wow fadeInDown animated" style="animation-delay: 0.5s; animation-duration: 1.3s; visibility: visible; animation-name: fadeInDown;" />
+                      <u-animate-container>
+                        <u-animate name="fadeInRight" delay=".1s" duration="1s" :iteration="1" :offset="0" animateClass="animated" :begin="false">
+                            <img src="~components/img/yujia.png" class="ss-img1 wow fadeInDown animated" />
+                        </u-animate>
+                      </u-animate-container>
                      </div>
                     </div>
+                    <div class="clearfix"></div>
                    </div>
                   </div>
             </div>
         </div>
-
-
-        <vcenter></vcenter>
     <div>
-        <div class="centerb row" style="margin-right: 0px;">
-            <div class="col-md-5">
-                <div class="asdtext">
-                    <h1>誉嘉智能锁管理平台允许您查看、管理您的用户与锁, 实现无间隙的观察与安全性。</h1>
-                    <h3><a href="">了解管理平台</a></h3>
-                </div>
-            </div>
-            <div class="col-md-5" style="padding-right: 0px">
-                <img src="~components/img/4567.png">
-            </div>
-        </div>
-        <u-animate-container>
-            <u-animate name="fadeIn" delay="0s" duration="1s" :iteration="1" :offset="0" animateClass="animated" :begin="false">测试</u-animate>
+        <div class="row cenwenhh tese" style="margin-right: 0px">
+            <p class="col-md-12 text-center">
+                <u-animate-container>
+                <u-animate name="fadeInUpBig" delay=".1s" duration=".6s" :iteration="1" :offset="0" animateClass="animated" :begin="false"><p class="">密码远程发放 查询安全便捷</p></u-animate>
           </u-animate-container>
-        <div class="centerv row" style="margin-right: 0px; background: #ccc">
-            <div class="col-md-5">
-                <img src="~components/img/20180507锁.png" class="col-md-12">
-            </div>
-            <div class="col-md-6" style="padding-right: 0px">
-                <div class="asdtext">
-                    <h1>誉嘉锁被建立到最后。采用优质材料和耐用设计, 我们的智能锁定解决方案的范围将使您的团队、构建和资产安全.</h1>
-                    <h3><a href="">了解管理平台</a></h3>
-                </div>
-            </div>
+            </p>
+            <p class="col-md-12 text-center">
+                <u-animate-container>
+                  <u-animate name="fadeInUpBig" delay=".2s" duration="1s" :iteration="1" :offset="0" animateClass="animated" :begin="false">
+                    <p class="asdq">时效密码  临时密码</p>
+                  </u-animate>
+                </u-animate-container>
+            </p>
         </div>
-        <div class="centerv row" style="margin-right: 0px;">
-            <div class="col-md-8" style="padding-right: 0px">
-                <div class="asdtext">
-                    <h1>誉嘉智能锁管理平台允许您查看、管理您的用户与锁, 实现无间隙的观察与安全性。</h1>
-                    <h3><a href="">了解管理平台</a></h3>
+        <div class="slider-wrap centerv row" style="margin-right: 0px; background: #ccc">
+          <div class="slider col-md-8" id="slider" style="padding-right: 0px">
+              <section id="section-1" class="section hero is-primary is-fullheight" v-show="showList">
+                <div class="containe">
+                    <u-animate-container>
+                  <u-animate name="fadeInUpBig" delay=".2s" duration="1s" :iteration="1" :offset="0" animateClass="animated" :begin="false">
+                    <img src="~components/img/php2.png" class="slide" id="slide-0" width="100%">
+                  </u-animate>
+                </u-animate-container>
                 </div>
+              </section>
+              <section id="section-2" class="section hero is-info is-fullheight" v-show="!showList">
+                <div class="containe">
+                    <u-animate-container>
+                  <u-animate name="fadeInUpBig" delay=".2s" duration="1s" :iteration="1" :offset="0" animateClass="animated" :begin="false">
+                    <img src="~components/img/php1.png" class="slide" id="slide-0" width="100%">
+                  </u-animate>
+                  </u-animate-container>
+                </div>
+              </section>
+          </div>
+          <nav class="slider-nav col-md-4" style="padding: 0;">
+            <div class="my-nav">
+              <div href="#home" class="scrollactive-item" v-on:mouseover="home" id="home">
+                  <u-animate-container>
+                      <u-animate name="fadeInUpBig" delay=".2s" duration="1s" :iteration="1" :offset="0" animateClass="animated" :begin="false">
+                        <p ><span class="iiu">时效密码 远程发放</span><br>
+                        根据房客入住时间自动生成 到期自动失效</p>
+                      </u-animate>
+                  </u-animate-container>
+
+              </div>
+              <div href="#about" class="scrollactive-item" v-on:mouseover="about" id="about">
+                <u-animate-container>
+                      <u-animate name="fadeInUpBig" delay=".2s" duration="1s" :iteration="1" :offset="0" animateClass="animated" :begin="false">
+                        <p><span class="iiu">临时密码 安全便捷</span><br>
+                        看房、物业、家政临时上门 安全便捷</p>
+                      </u-animate>
+                  </u-animate-container>
+              </div>
             </div>
-            <div class="col-md-3">
-                <img src="~components/img/123.png" class="col-md-8">
-            </div>
+          </nav>
         </div>
+        <div class="row cenwenhh tese" style="margin-right: 0px">
+            <p class="col-md-12 text-center">
+                <u-animate-container>
+                <u-animate name="fadeInUpBig" delay=".1s" duration=".6s" :iteration="1" :offset="0" animateClass="animated" :begin="false"><p class="">适用于绝大多数门体</p></u-animate>
+          </u-animate-container>
+            </p>
+            <p class="col-md-12 text-center">
+                <u-animate-container>
+                  <u-animate name="fadeInUpBig" delay=".2s" duration="1s" :iteration="1" :offset="0" animateClass="animated" :begin="false">
+                    <p class="asdq">国标尺寸  适配性高  安装方便</p>
+                  </u-animate>
+                </u-animate-container>
+            </p>
+        </div>
+
         <div class="centerz row" style="margin-right: 0px">
-        <div class="col-md-1"></div>
-        <div class="col-md-5 hoverimg">
-          <a href="../iconfont/list.html" class="imghover">
-            <div class="imgall col-md-12">
-              <div class="imghead">
-                <img src="~components/img/logo.png" class="img-fluid" >
-                <p class="colq">123</p>
-              </div>
-              <img src="~components/img/20180508锁.png" width="100%" class="ash col-md-9">
+            <div class="col-md-1"></div>
+            <div class="col-md-5 hoverimg">
+              <a href="../iconfont/list.html" class="imghover">
+                <div class="imgall col-md-12">
+                  <div class="imghead">
+                    <img src="~components/img/logo.png" class="img-fluid" >
+                    <p class="colq">123</p>
+                  </div>
+                  <img src="~components/img/20180508锁.png" width="100%" class="ash col-md-9">
+                </div>
+              </a>
             </div>
-          </a>
-        </div>
-        <div class="col-md-5 hoverimg">
-          <a href="../iconfont/list.html" class="imghover">
-            <div class="imgall col-md-12">
-              <div class="imghead">
-                <img src="~components/img/logo.png" class="img-fluid">
-                <p class="colq">123</p>
-              </div>
-              <img src="~components/img/20180508锁.png" width="100%" class="ash col-md-9">
+            <div class="col-md-5 hoverimg">
+              <a href="../iconfont/list.html" class="imghover">
+                <div class="imgall col-md-12">
+                  <div class="imghead">
+                    <img src="~components/img/logo.png" class="img-fluid">
+                    <p class="colq">123</p>
+                  </div>
+                  <img src="~components/img/20180508锁.png" width="100%" class="ash col-md-9">
+                </div>
+              </a>
             </div>
-          </a>
         </div>
+        <div class="centerg row" style="margin-right: 0px;">
+                <div class="text-center col-md-12 ">
+                    <h2>防盗门适配率＞98%</h2>
+                    <u-animate-container>
+                      <u-animate name="fadeInLeft" delay=".2s" duration="1s" :iteration="1" :offset="0" animateClass="animated" :begin="false">
+                        <div style="width: 100%;height: 77px;background: #ccc;position: absolute;opacity: 0.9"></div>
+                      </u-animate>
+                    </u-animate-container>
+                </div>
         </div>
     </div>
   <cell title="多页面路由" value="" is-link link="../router/details.html"></cell>
@@ -165,6 +229,7 @@ import center from 'components/center/center'
 import footer from 'components/footer/footer'
 import {UAnimateContainer, UAnimate} from 'vue-wow'
 import animate from 'animate.css'
+
 export default {
    props:{ // 子组件获取 父组件 数据
      sell:{
@@ -176,22 +241,9 @@ export default {
       }
    },
   data() {
-    return {
-        webname:5464,
-        'list':[{
-            'id':0,
-            'name':'alert弹窗',
-            'url':'../vuxDemo/alert.html'
-        },{
-            'id':1,
-            'name':'Calendar时间选择',
-            'url':'../vuxDemo/calendar.html'
-        },{
-            'id':2,
-            'name':'button按钮',
-            'url':'../vuxDemo/button.html'
-        }]
-    }
+        return{
+            showList:true
+        }
   },
   components: {
     vheader:header,vclimg:vlimg,vcenter:center,vfooter:footer,
@@ -210,7 +262,12 @@ export default {
   },
   //相关操作事件
   methods: {
-
+    home: function(){
+        this.showList=true;
+    },
+    about: function(){
+        this.showList=false;
+    },
   }
 }
 </script>
