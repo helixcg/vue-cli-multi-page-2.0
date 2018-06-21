@@ -56,8 +56,8 @@ var webpackConfig = {
         include: [resolve('src'), resolve('test')]
       },
       {
-        test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
-        loader: 'url-loader',
+        test: /\.(png|jpg|gif|svg)(\?.*)?$/,
+        loader: 'url-loader?limit=8192',
         query: {
           limit: 10000,
           name: utils.assetsPath('img/[name].[ext]')
