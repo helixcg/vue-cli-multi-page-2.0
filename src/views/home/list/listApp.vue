@@ -25,8 +25,7 @@
 			</div>
 			<div class="col-md-6" style="padding-right: 0px">
 				<div class="asdtext">
-					<h1>誉嘉锁被建立到最后。采用优质材料和耐用设计, 我们的智能锁定解决方案的范围将使您的团队、构建和资产安全.</h1>
-					<h3><a href="">了解管理平台</a></h3>
+					<h1>誉嘉锁<br>采用优质材料和耐用设计, 我们的智能锁定解决方案的范围将使您的团队、构建和资产安全.</h1>
 				</div>
 			</div>
     	</div>
@@ -44,7 +43,7 @@
     	<div class="centerz row" style="margin-right: 0px">
         <div class="col-md-1"></div>
         <div class="col-md-5 hoverimg">
-          <a href="../iconfont/list.html" class="imghover">
+          <a href="../detail/list.html" class="imghover">
             <div class="imgall col-md-12">
               <div class="imghead">
                 <img src="~components/img/logo.png" class="img-fluid" >
@@ -55,7 +54,7 @@
           </a>
         </div>
         <div class="col-md-5 hoverimg">
-          <a href="../iconfont/list.html" class="imghover">
+          <a href="../detail/list.html" class="imghover">
             <div class="imgall col-md-12">
               <div class="imghead">
                 <img src="~components/img/logo.png" class="img-fluid">

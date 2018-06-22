@@ -11,10 +11,7 @@
         </span >
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link colora" href="#" id="colora">系统登录</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link colora" href="#" id="colora">关于我们</a>
+            <a class="nav-link colora" href="//yujia.ickkey.com" target="_blank" id="colora">系统登录</a>
           </li>
           <li class="nav-item mgf_tips_icons">
             <a class="nav-link  iconfont" title="谢谢关注" href="#" id="dropdown08" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&#xe635;</a>

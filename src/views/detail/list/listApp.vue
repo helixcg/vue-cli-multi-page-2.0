@@ -90,10 +90,15 @@
                         </u-animate-container>
                     </div>
                     <div class="ss-right">
-                     <div class="img1-wrap img-wrap">
+                     <div class="img1-wrap img-wrap" style="position: relative;">
                       <u-animate-container>
-                        <u-animate name="fadeInRight" delay=".1s" duration="1s" :iteration="1" :offset="0" animateClass="animated" :begin="false">
-                            <img src="~components/img/yujia.png" class="ss-img1 wow fadeInDown animated" />
+                        <u-animate name="fadeInRight" delay=".7s" duration="1s" :iteration="1" :offset="0" animateClass="animated" :begin="false">
+                            <img src="~components/img/123.png" class="img1wrap">
+                        </u-animate>
+                      </u-animate-container>
+                      <u-animate-container>
+                        <u-animate name="fadeInRight" delay=".3s" duration="1s" :iteration="1" :offset="0" animateClass="animated" :begin="false">
+                            <img src="~components/img/yujia.png" class="ss-img1"/>
                         </u-animate>
                       </u-animate-container>
                      </div>
@@ -112,7 +117,7 @@
             </p>
             <p class="col-md-12 text-center">
                 <u-animate-container>
-                  <u-animate name="fadeInUpBig" delay=".2s" duration="1s" :iteration="1" :offset="0" animateClass="animated" :begin="false">
+                  <u-animate name="fadeInUp" delay=".2s" duration="1s" :iteration="1" :offset="0" animateClass="animated" :begin="false">
                     <p class="asdq">时效密码  临时密码</p>
                   </u-animate>
                 </u-animate-container>
@@ -123,7 +128,7 @@
               <section id="section-1" class="section hero is-primary is-fullheight" v-show="showList">
                 <div class="containe">
                     <u-animate-container>
-                  <u-animate name="fadeInUpBig" delay=".2s" duration="1s" :iteration="1" :offset="0" animateClass="animated" :begin="false">
+                  <u-animate name="fadeIn" delay=".5s" duration="1s" :iteration="1" :offset="0" animateClass="animated" :begin="false">
                     <img src="~components/img/php2.png" class="slide" id="slide-0" width="100%">
                   </u-animate>
                 </u-animate-container>
@@ -132,7 +137,7 @@
               <section id="section-2" class="section hero is-info is-fullheight" v-show="!showList">
                 <div class="containe">
                     <u-animate-container>
-                  <u-animate name="fadeInUpBig" delay=".2s" duration="1s" :iteration="1" :offset="0" animateClass="animated" :begin="false">
+                  <u-animate name="fadeIn" delay="0s" duration=".1s" :iteration="1" :offset="0" animateClass="animated" :begin="false">
                     <img src="~components/img/php1.png" class="slide" id="slide-0" width="100%">
                   </u-animate>
                   </u-animate-container>
@@ -143,7 +148,7 @@
             <div class="my-nav">
               <div href="#home" class="scrollactive-item" v-on:mouseover="home" id="home">
                   <u-animate-container>
-                      <u-animate name="fadeInUpBig" delay=".2s" duration="1s" :iteration="1" :offset="0" animateClass="animated" :begin="false">
+                      <u-animate name="fadeIn" delay=".5s" duration="1.5s" :iteration="1" :offset="0" animateClass="animated" :begin="false">
                         <p ><span class="iiu">时效密码 远程发放</span><br>
                         根据房客入住时间自动生成 到期自动失效</p>
                       </u-animate>
@@ -152,7 +157,7 @@
               </div>
               <div href="#about" class="scrollactive-item" v-on:mouseover="about" id="about">
                 <u-animate-container>
-                      <u-animate name="fadeInUpBig" delay=".2s" duration="1s" :iteration="1" :offset="0" animateClass="animated" :begin="false">
+                      <u-animate name="fadeIn" delay=".5s" duration="2s" :iteration="1" :offset="0" animateClass="animated" :begin="false">
                         <p><span class="iiu">临时密码 安全便捷</span><br>
                         看房、物业、家政临时上门 安全便捷</p>
                       </u-animate>
@@ -169,50 +174,48 @@
             </p>
             <p class="col-md-12 text-center">
                 <u-animate-container>
-                  <u-animate name="fadeInUpBig" delay=".2s" duration="1s" :iteration="1" :offset="0" animateClass="animated" :begin="false">
+                  <u-animate name="fadeInUp" delay=".2s" duration="1s" :iteration="1" :offset="0" animateClass="animated" :begin="false">
                     <p class="asdq">国标尺寸  适配性高  安装方便</p>
                   </u-animate>
                 </u-animate-container>
             </p>
         </div>
-
-        <div class="centerz row" style="margin-right: 0px">
-            <div class="col-md-1"></div>
-            <div class="col-md-5 hoverimg">
-              <a href="../iconfont/list.html" class="imghover">
-                <div class="imgall col-md-12">
-                  <div class="imghead">
-                    <img src="~components/img/logo.png" class="img-fluid" >
-                    <p class="colq">123</p>
-                  </div>
-                  <img src="~components/img/20180508锁.png" width="100%" class="ash col-md-9">
-                </div>
-              </a>
-            </div>
-            <div class="col-md-5 hoverimg">
-              <a href="../iconfont/list.html" class="imghover">
-                <div class="imgall col-md-12">
-                  <div class="imghead">
-                    <img src="~components/img/logo.png" class="img-fluid">
-                    <p class="colq">123</p>
-                  </div>
-                  <img src="~components/img/20180508锁.png" width="100%" class="ash col-md-9">
-                </div>
-              </a>
-            </div>
-        </div>
         <div class="centerg row" style="margin-right: 0px;">
                 <div class="text-center col-md-12 ">
-                    <h2>防盗门适配率＞98%</h2>
                     <u-animate-container>
-                      <u-animate name="fadeInLeft" delay=".2s" duration="1s" :iteration="1" :offset="0" animateClass="animated" :begin="false">
-                        <div style="width: 100%;height: 77px;background: #ccc;position: absolute;opacity: 0.9"></div>
+                      <u-animate name="fadeInLeft" delay=".4s" duration="1s" :iteration="1" :offset="0" animateClass="animated" :begin="false">
+                        <h2 class="fdmspl">防盗门适配率＞98%</h2>
                       </u-animate>
                     </u-animate-container>
                 </div>
         </div>
+
+        <div class="centerz qiang row" style="margin-right: 0px">
+          <div class="col-md-1"></div>
+            <div class="col-md-4">
+                <div class="imgall col-md-12">
+                  <u-animate-container>
+                      <u-animate name="fadeIn" delay=".8s" duration="1.7s" :iteration="1" :offset="120" animateClass="animated" :begin="false">
+                          <img src="~components/img/router.png" width="60%" class="ash col-md-12">
+                      </u-animate>
+                    </u-animate-container>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="imgall col-md-12">
+                  <u-animate-container>
+                      <u-animate name="fadeIn" delay=".8s" duration="1.7s" :iteration="1" :offset="120" animateClass="animated" :begin="false">
+                          <div class="asdwg">
+                            <h2 class="colq">誉嘉智能网关</h2><br>
+                            <p>一个网关 <span>|</span> 多把锁 <span>|</span> 50米覆盖</p><br>
+                            <p>关联协议技术成熟稳定，可实现信号的顺畅转接。</p>
+                          </div>
+                      </u-animate>
+                    </u-animate-container>
+                </div>
+            </div>
+        </div>
     </div>
-  <cell title="多页面路由" value="" is-link link="../router/details.html"></cell>
     <vfooter></vfooter>
     </div>
 </div>
