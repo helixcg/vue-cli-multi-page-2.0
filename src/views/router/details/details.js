@@ -4,22 +4,37 @@ import VueRouter from 'vue-router'
 import Add from './addApp'
 import List from './listApp'
 import app from './app'
-
+import a from './a'
+import b from './b'
+import c from './c'
+import d from './d'
 const routes = [
   {path: '/', component: app,
 	      children: [
         {
-          // 当 /user/:id/profile 匹配成功，
-          // UserProfile 会被渲染在 User 的 <router-view> 中
-          path: '',
+          path: 'addApp',
           component: Add
         },
         {
-          // 当 /user/:id/posts 匹配成功
-          // UserPosts 会被渲染在 User 的 <router-view> 中
           path: 'list',
           component: List
-        }
+        },
+        {
+          path: 'a',
+          component: a
+        },
+        {
+          path: 'b',
+          component: b
+        },
+        {
+          path: 'c',
+          component: c
+        },
+        {
+          path: 'd',
+          component: d
+        },
       ]
 	}
 ]

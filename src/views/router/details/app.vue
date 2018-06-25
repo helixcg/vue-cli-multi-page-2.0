@@ -27,7 +27,7 @@
           <div class="text-center guiul">
             <ul>
               <li>
-                <router-link to='/'  active-class="active">
+                <router-link to='/addApp'  active-class="active">
                   <p>上门安装</p>
                 </router-link>
               </li>
@@ -37,25 +37,21 @@
                 </router-link>
               </li>
               <li>
-                <router-link to='/list' active-class="active">
+                <router-link to='/a' active-class="active">
                   <p>常见问题</p>
                 </router-link>
               </li>
               <li>
-                <router-link to='/list' active-class="active">
+                <router-link to='/b' active-class="active">
                   <p>关于我们</p>
                 </router-link>
               </li>
               <li>
-                <router-link to='/list' active-class="active">
+                <router-link to='/c' active-class="active">
                   <p>联系我们</p>
                 </router-link>
               </li>
-              <li>
-                <router-link to='/list' active-class="active">
-                  <p>新闻中心</p>
-                </router-link>
-              </li>
+
             </ul>
           </div>
         </div>

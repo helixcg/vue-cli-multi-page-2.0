@@ -6,12 +6,14 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarsExample08">
         <span  class="navbar-text">
-          <div class="imgheader"></div>
+          <a href="../home/list.html">
+            <div class="imgheader"></div>
           <p class="img_title">让生活变得便捷、安全、智能</p>
+          </a>
         </span >
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link colora" href="//yujia.ickkey.com" target="_blank" id="colora">系统登录</a>
+            <a class="nav-link colora" href="//lm.ickkey.com" target="_blank" id="colora">系统登录</a>
           </li>
           <li class="nav-item mgf_tips_icons">
             <a class="nav-link  iconfont" title="谢谢关注" href="#" id="dropdown08" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&#xe635;</a>

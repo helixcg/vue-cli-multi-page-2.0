@@ -11,17 +11,16 @@
       <div class="col-md-2 text-center">
         <p>誉嘉服务</p>
         <ul>
-          <li>上门安装</li>
-          <li>退货维修</li>
-          <li>常见问题</li>
+          <li><a href="../router/details.html#/addApp">上门安装</a></li>
+          <li><a href="../router/details.html#/list">退货维修</a></li>
+          <li><a href="../router/details.html#/a">常见问题</a></li>
         </ul>
       </div>
       <div class="col-md-2 text-center">
         <p>关于誉嘉</p>
         <ul>
-          <li>关于我们</li>
-          <li>联系我们</li>
-          <li>新闻中心</li>
+          <li><a href="../router/details.html#/b">关于我们</a></li>
+          <li><a href="../router/details.html#/c">联系我们</a></li>
         </ul>
       </div>
       <div class="col-md-2 text-center">
